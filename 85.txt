@@ -32,40 +32,40 @@ Total Climb Time: 10
 Tele Cargo Score: 03
 Auto Cargo Score: 4
 ------------------------
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
+Match Number: 1
+Taxi: y
+Auto Upper: 01
+Auto Lower: 01
+Auto Missed: 01
+Tele Upper: 01
+Tele Lower: 01
+Tele Missed: 01
+Position: n
+Defense: 1
+Climb Type: l
+Start: 30
+End: 2
+Total Climb Time: 28
+Tele Cargo Score: 03
+Auto Cargo Score: 6
+------------------------
+Match Number: 1
+Taxi: y
+Auto Upper: 01
+Auto Lower: 02
+Auto Missed: 01
+Tele Upper: 05
+Tele Lower: 10
+Tele Missed: 03
+Position: l
+Defense: 0
+Climb Type: t
+Start: 25
+End: 6
+Total Climb Time: 19
+Tele Cargo Score: 20
+Auto Cargo Score: 8
+------------------------
 0
 0
 0

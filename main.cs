@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-//using System.Threading;
+using System.Threading;
 
 class Program {
 
@@ -24,7 +24,10 @@ class Program {
       }
       catch(Exception e){
         Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("Oops, something went wrong, check the code and please try again.");
+        Console.WriteLine();
+        Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Please press enter to go to menu");
         Console.ReadLine();
         Console.Clear();
@@ -448,7 +451,17 @@ class Program {
     
     writeToFile(team, "------------------------");
     Console.Clear();
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine("***********************");
+    Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine("Success!");
+    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.WriteLine("***********************");
+    
+    
+    Thread.Sleep(2000);
+    Console.Clear();
+    Console.ForegroundColor = ConsoleColor.White;
     menu();
   }
 
@@ -528,6 +541,7 @@ class Program {
   }
   
   public static void Main (string[] args) {
+    
     menu();
   }
 }
