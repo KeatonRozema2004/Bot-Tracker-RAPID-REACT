@@ -5,15 +5,21 @@ using System.Threading;
 class Program {
 
   public static void menu(){
+    Console.ForegroundColor = ConsoleColor.Blue;
+    Console.WriteLine();
     Console.WriteLine("---Bot Tracker: RAPID REACT---");
+    Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("Choose an option:");
-    Console.WriteLine("1. Enter match data/Create new team file");
-    Console.WriteLine("2. Get team best scores");
-    Console.WriteLine("3. Get team average tele cargo scores");
-    Console.WriteLine("4. Get team matches (cargo, and climb)");
-    Console.WriteLine("5. Check if team has data");
-    Console.WriteLine("6. Get best scores for teams");
-    Console.WriteLine("7. Drive Team Data (IN PROGRESS)");
+    Console.WriteLine("1. Enter Data/Create Team");
+    Console.WriteLine("2. Specific Team Best Scores");
+    Console.WriteLine("3. Specific Team Average Scores");
+    Console.WriteLine("4. All Team Matches");
+    Console.WriteLine("5. Driver Sheet");
+    Console.WriteLine("6. Overall Best Scores");
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.Blue;
+    Console.WriteLine("For ideas and concepts: https://docs.google.com/document/d/1lcDnq1DKAksiUKyjLZiNfk-rsdiIlfKHMmPCIlj3ZKc/edit#");
+    Console.ForegroundColor = ConsoleColor.White;
     
     string prompt = Console.ReadLine();
     Console.Clear();
@@ -52,13 +58,10 @@ class Program {
       menu();
     }
     else if (prompt ==  "5"){
-      checkData();
+      driveData();
     }
     else if (prompt == "6"){
       bestTeamCargo();
-    }
-    else if (prompt == "7"){
-      driveData();
     }
     else{
       menu();
@@ -160,9 +163,12 @@ class Program {
       }
     }
     Console.WriteLine("Team " + teleHighTeam + " Upper Tele: " + teleHigh);
-    Console.WriteLine("Team " + teleLowTeam + " Upper Tele: " + teleLow);
+    Console.WriteLine("Team " + teleLowTeam + " Lower Tele: " + teleLow);
     Console.WriteLine("Team " + timeTeam + " Climb Time " + time);
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("Press Enter to go back to menu");
+    Console.ForegroundColor = ConsoleColor.White;
     Console.ReadLine();
     Console.Clear();
     menu();
