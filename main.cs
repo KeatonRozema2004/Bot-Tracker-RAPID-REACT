@@ -3,8 +3,10 @@ using System.IO;
 using System.Threading;
 
 class Program {
+  
 
   public static void menu(){
+    Console.Title = ("The Console");
     Console.ForegroundColor = ConsoleColor.Blue;
     Console.WriteLine();
     Console.WriteLine("---Bot Tracker: RAPID REACT---");
@@ -17,7 +19,7 @@ class Program {
     Console.WriteLine("5. Driver Sheet");
     Console.WriteLine("6. Overall Best Scores");
     Console.WriteLine();
-    Console.ForegroundColor = ConsoleColor.Blue;
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
     Console.WriteLine("For ideas and concepts: https://docs.google.com/document/d/1lcDnq1DKAksiUKyjLZiNfk-rsdiIlfKHMmPCIlj3ZKc/edit#");
     Console.ForegroundColor = ConsoleColor.White;
     
@@ -75,20 +77,25 @@ class Program {
     Console.WriteLine("---------------------");
     Console.WriteLine("1. Top 10 Tele Upper Cargo Score");
     Console.WriteLine("2. Top 10 Tele Lower Cargo Score");
-    Console.WriteLine("3. Top 10 Defense Bot");
+    Console.WriteLine("3. Top 10 Climb Type/Time");
     Console.WriteLine("4. Top 10 Climb Type/Time");
+    Console.WriteLine("5. Top 10 Defense Bot");
     prompt = Console.ReadLine();
     if(prompt == "1"){
       Console.Clear();
-      bestTeamCargoUpper("Tele Upper", 12, 13, 0, 0, false);
+      bestTeamsStats("Tele Upper", 12, 13, 0, 0, false);
     }
     else if(prompt == "2"){
       Console.Clear();
-      bestTeamCargoUpper("Tele Lower", 12, 13, 0, 0, false);
+      bestTeamsStats("Tele Lower", 12, 13, 0, 0, false);
     }
     else if(prompt == "3"){
       Console.Clear();
-      bestTeamCargoUpper("Total Climb Time", 18, 19, 0, 10000, true);
+      bestTeamsStats("Tele Cargo Score", 18, 19, 0, 0, false);
+    }
+    else if(prompt == "4"){
+      Console.Clear();
+      bestTeamsStats("Total Climb Time", 18, 19, 0, 10000, true);
     }
     else{
       menu();
@@ -97,7 +104,44 @@ class Program {
   }
 
   public static void driveData(){
-    lastMatches();
+    int i = 1;
+    Console.Write("Team #: ");
+    string team = Console.ReadLine();
+    Console.WriteLine("Getting team data...");
+    Console.WriteLine("--------------------");
+    while(GetLine(team+".txt", i) != GetLine("blank.txt", 1)){
+      i++;
+      if(GetLine(team+".txt", i).Contains("Tele Upper")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Tele Lower")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Auto Upper")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Auto Lower")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Climb Type")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Climb Time")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Defense")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Position")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Entry")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("-----")){
+        Console.WriteLine("--------------------");
+      }
+    }
     bestScore();
     Console.WriteLine("Press enter to go back to menu");
     Console.ReadLine();
@@ -129,10 +173,25 @@ class Program {
       if(GetLine(team+".txt", i).Contains("Tele Lower")){
         Console.WriteLine(GetLine(team+".txt", i));
       }
+      if(GetLine(team+".txt", i).Contains("Auto Upper")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Auto Lower")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
       if(GetLine(team+".txt", i).Contains("Climb Type")){
         Console.WriteLine(GetLine(team+".txt", i));
       }
       if(GetLine(team+".txt", i).Contains("Climb Time")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Defense")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Position")){
+        Console.WriteLine(GetLine(team+".txt", i));
+      }
+      if(GetLine(team+".txt", i).Contains("Entry")){
         Console.WriteLine(GetLine(team+".txt", i));
       }
       if(GetLine(team+".txt", i).Contains("-----")){
@@ -174,7 +233,10 @@ class Program {
     Console.Clear();
     menu();
   }
-  public static void bestTeamCargoUpper(string contains, int numb1, int numb2, int tempNumb, int startNum, bool hang){
+  ///<summary>
+  ///Basically looks at the best stats for something specific. This can be cargo, or hang, or even defense
+  ///</summary>
+  public static void bestTeamsStats(string contains, int numb1, int numb2, int tempNumb, int startNum, bool hang){
     int tempNum = tempNumb;
     int numTeams = 10000;
     int teleHigh1 = startNum;
@@ -346,6 +408,7 @@ class Program {
     int time = 500;
     int leastAutoMissed = 500;
     int leastTeleMissed = 500;
+    int defense = 0;
     int tempNum = 0;
     string tempString;
     string climbType = "n";
@@ -388,6 +451,15 @@ class Program {
           teleHigh = tempNum;
         }
       }
+
+      if(GetLine(team+".txt", i).Contains("Defense")){
+        string num1 = GetLine(team+".txt", i)[9].ToString();
+        tempNum = Int32.Parse(num1);
+        if(tempNum > defense){
+          defense = tempNum;
+        }
+      }
+      /*
       if(GetLine(team+".txt", i).Contains("Total Climb Time")){
         string num1 = GetLine(team+".txt", i)[18].ToString();
         string num2 = GetLine(team+".txt", i)[19].ToString();
@@ -396,6 +468,7 @@ class Program {
           time = tempNum;
         }
       }
+*/
       if(GetLine(team+".txt", i).Contains("Climb Type")){
         string climb = GetLine(team+".txt", i)[12].ToString();
         if(climb == "l" && climbType == "n"){
@@ -421,6 +494,28 @@ class Program {
         
       }
     }
+
+
+
+
+
+    i=0;
+    while(GetLine(team+".txt", i) != GetLine("blank.txt", 1)){
+      //Console.WriteLine(GetLine(team+".txt",i));
+      i++;
+
+      if(GetLine(team+".txt", i).Contains("Total Climb Time")){
+        string num1 = GetLine(team+".txt", i)[18].ToString();
+        string num2 = GetLine(team+".txt", i)[19].ToString();
+        tempNum = Int32.Parse(num1+num2);
+        
+        if(tempNum < time && GetLine(team+".txt", i-4)[12].ToString() == climbType){
+          time = tempNum;
+          
+        }
+      }
+
+    }
     Console.WriteLine("Best High Goal Auto: " + autoHigh);
     Console.WriteLine("Best Low Goal Auto: " + autoLow);
     Console.WriteLine();
@@ -429,6 +524,7 @@ class Program {
     Console.WriteLine();
     Console.WriteLine("Best Climb Time: " + time);
     Console.WriteLine("Best Climb Type: " + climbType);
+    Console.WriteLine("Best Defense: " + defense);
     Console.WriteLine();
     
     
@@ -463,7 +559,7 @@ class Program {
     Console.ReadLine();
     Console.Clear();
     menu();
-    return 1;
+    return averageScore/j;
   }
 
   
@@ -595,6 +691,7 @@ class Program {
     writeToFile(team, "Climb Type: "+ climbType);
     writeToFile(team, "Start: "+ climbStart);
     writeToFile(team, "End: "+ climbEnd);
+    writeToFile(team, "Entry: "+ climbEnter);
 
     teleCargo = (Int32.Parse(teleUpper)*2)+(Int32.Parse(teleLower)*1);
     autoCargo = (Int32.Parse(autoUpper)*4)+(Int32.Parse(autoLower)*2);
@@ -626,27 +723,12 @@ class Program {
     Console.WriteLine("***********************");
     
     
-    Thread.Sleep(2000);
+    Thread.Sleep(2500);
     Console.Clear();
     Console.ForegroundColor = ConsoleColor.White;
     menu();
   }
 
-
-
-  public static void checkData(){
-    Console.Write("Team #: ");
-    string team = Console.ReadLine();
-    if(GetLine(team+".txt", 1) == GetLine("blank.txt",1)){
-      Console.WriteLine("No data is here");
-    }
-    else{
-      Console.WriteLine("Data exists for this team");
-    }
-    Console.WriteLine("Press Enter to go to menu");
-    Console.ReadLine();
-    menu();
-  }
   /*
   public static void teamExists(){
     string team;
@@ -708,7 +790,6 @@ class Program {
   }
   
   public static void Main (string[] args) {
-    
     menu();
   }
 }
