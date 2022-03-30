@@ -61,7 +61,7 @@ class Program {
       driveData();
     }
     else if (prompt == "6"){
-      bestTeamCargo();
+      bestTeamMenu();
     }
     else{
       menu();
@@ -69,6 +69,24 @@ class Program {
     
   }
 
+  public static void bestTeamMenu(){
+    string prompt;
+    Console.WriteLine("Best Team Menu");
+    Console.WriteLine("---------------------");
+    Console.WriteLine("1. Top 10 Tele Upper Cargo Score");
+    Console.WriteLine("2. Top 10 Tele Lower Cargo Score");
+    Console.WriteLine("3. Top 10 Defense Bot");
+    Console.WriteLine("4. Top 10 Climb Type/Time");
+    prompt = Console.ReadLine();
+    if(prompt == "1"){
+      Console.Clear();
+      bestTeamCargoUpper();
+    }
+    else{
+      menu();
+    }
+    
+  }
 
   public static void driveData(){
     lastMatches();
@@ -115,32 +133,16 @@ class Program {
     }
     
   }
-  public static void bestTeamCargo(){
-    
+  public static void bestTeamCargoLower(){
     int tempNum = 0;
-    
-    int teleHigh = 0;
-    string teleHighTeam = "";
     int teleLow = 0;
     string teleLowTeam = "";
-    int time = 1000;
-    string timeTeam = "";
-    
     for(int i = 0; i < 20000; i++){
       if(File.Exists(i+".txt")){
         int j = 1;
         while(GetLine(i+".txt", j) != GetLine("blank.txt", 1)){
           //Console.WriteLine(GetLine(team+".txt",i));
           j++;
-          if(GetLine(i+".txt", j).Contains("Tele Upper")){
-            string num1 = GetLine(i+".txt", j)[12].ToString();
-            string num2 = GetLine(i+".txt", j)[13].ToString();
-            tempNum = Int32.Parse(num1+num2);
-            if(tempNum > teleHigh){
-              teleHighTeam = i.ToString();
-              teleHigh = tempNum;
-            }
-          }
           if(GetLine(i+".txt", j).Contains("Tele Lower")){
             string num1 = GetLine(i+".txt", j)[12].ToString();
             string num2 = GetLine(i+".txt", j)[13].ToString();
@@ -150,6 +152,30 @@ class Program {
               teleLow = tempNum;
             }
           }
+
+        }
+      }
+    }
+    Console.WriteLine("Team " + teleLowTeam + " Lower Tele: " + teleLow);
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.DarkCyan;
+    Console.WriteLine("Press Enter to go back to menu");
+    Console.ForegroundColor = ConsoleColor.White;
+    Console.ReadLine();
+    Console.Clear();
+    menu();
+  }
+  public static void bestTeamHang(){
+    int tempNum = 0;
+    int time = 1000;
+    string timeTeam = "";
+    
+    for(int i = 0; i < 20000; i++){
+      if(File.Exists(i+".txt")){
+        int j = 1;
+        while(GetLine(i+".txt", j) != GetLine("blank.txt", 1)){
+          //Console.WriteLine(GetLine(team+".txt",i));
+          j++;
           if(GetLine(i+".txt", j).Contains("Total Climb Time")){
             string num1 = GetLine(i+".txt", j)[18].ToString();
             string num2 = GetLine(i+".txt", j)[19].ToString();
@@ -162,11 +188,149 @@ class Program {
         }
       }
     }
-    Console.WriteLine("Team " + teleHighTeam + " Upper Tele: " + teleHigh);
-    Console.WriteLine("Team " + teleLowTeam + " Lower Tele: " + teleLow);
     Console.WriteLine("Team " + timeTeam + " Climb Time " + time);
     Console.WriteLine();
-    Console.ForegroundColor = ConsoleColor.Red;
+    Console.ForegroundColor = ConsoleColor.DarkCyan;
+    Console.WriteLine("Press Enter to go back to menu");
+    Console.ForegroundColor = ConsoleColor.White;
+    Console.ReadLine();
+    Console.Clear();
+    menu();
+  }
+  public static void bestTeamCargoUpper(){
+    int numTeams = 10000;
+    int tempNum = 0;
+    int teleHigh1 = 0;
+    int teleHigh2 = 0;
+    int teleHigh3 = 0;
+    int teleHigh4 = 0;
+    int teleHigh5 = 0;
+    int teleHigh6 = 0;
+    int teleHigh7 = 0;
+    int teleHigh8 = 0;
+    int teleHigh9 = 0;
+    int teleHigh10 = 0;
+    
+    string teleHighTeam1 = "";
+    string teleHighTeam2 = "";
+    string teleHighTeam3 = "";
+    string teleHighTeam4 = "";
+    string teleHighTeam5 = "";
+    string teleHighTeam6 = "";
+    string teleHighTeam7 = "";
+    string teleHighTeam8 = "";
+    string teleHighTeam9 = "";
+    string teleHighTeam10 = "";
+    
+    
+    for(int i = 0; i < numTeams; i++){
+      if(File.Exists(i+".txt")){
+        int j = 1;
+        while(GetLine(i+".txt", j) != GetLine("blank.txt", 1)){
+          //Console.WriteLine(GetLine(team+".txt",i));
+          j++;
+          if(GetLine(i+".txt", j).Contains("Tele Upper")){
+            string num1 = GetLine(i+".txt", j)[12].ToString();
+            string num2 = GetLine(i+".txt", j)[13].ToString();
+            tempNum = Int32.Parse(num1+num2);
+            if(tempNum > teleHigh1){
+              teleHighTeam1 = i.ToString();
+              teleHigh1 = tempNum;
+            }
+          }
+        }
+      }
+    }
+    tempNum = 0;
+    for(int i = 0; i < numTeams; i++){
+      if(File.Exists(i+".txt")){
+        int j = 1;
+        while(GetLine(i+".txt", j) != GetLine("blank.txt", 1)){
+          //Console.WriteLine(GetLine(team+".txt",i));
+          j++;
+          if(GetLine(i+".txt", j).Contains("Tele Upper") && i+".txt" != teleHighTeam1 + ".txt"){
+            string num1 = GetLine(i+".txt", j)[12].ToString();
+            string num2 = GetLine(i+".txt", j)[13].ToString();
+            tempNum = Int32.Parse(num1+num2);
+            if(tempNum > teleHigh2){
+              teleHighTeam2 = i.ToString();
+              teleHigh2 = tempNum;
+            }
+          }
+        }
+      }
+    }
+    tempNum = 0;
+    for(int i = 0; i < numTeams; i++){
+      if(File.Exists(i+".txt")){
+        int j = 1;
+        while(GetLine(i+".txt", j) != GetLine("blank.txt", 1)){
+          //Console.WriteLine(GetLine(team+".txt",i));
+          j++;
+          if(GetLine(i+".txt", j).Contains("Tele Upper") && i+".txt" != teleHighTeam1 + ".txt" && i+".txt" != teleHighTeam2 + ".txt" ){
+            string num1 = GetLine(i+".txt", j)[12].ToString();
+            string num2 = GetLine(i+".txt", j)[13].ToString();
+            tempNum = Int32.Parse(num1+num2);
+            if(tempNum > teleHigh3){
+              teleHighTeam3 = i.ToString();
+              teleHigh3 = tempNum;
+            }
+          }
+        }
+      }
+    }
+    tempNum = 0;
+    for(int i = 0; i < numTeams; i++){
+      if(File.Exists(i+".txt")){
+        int j = 1;
+        while(GetLine(i+".txt", j) != GetLine("blank.txt", 1)){
+          //Console.WriteLine(GetLine(team+".txt",i));
+          j++;
+          if(GetLine(i+".txt", j).Contains("Tele Upper") && i+".txt" != teleHighTeam1 + ".txt" && i+".txt" != teleHighTeam2 + ".txt"&& i+".txt" != teleHighTeam3 + ".txt"){
+            string num1 = GetLine(i+".txt", j)[12].ToString();
+            string num2 = GetLine(i+".txt", j)[13].ToString();
+            tempNum = Int32.Parse(num1+num2);
+            if(tempNum > teleHigh4){
+              teleHighTeam4 = i.ToString();
+              teleHigh4 = tempNum;
+            }
+          }
+        }
+      }
+    }
+    tempNum = 0;
+    for(int i = 0; i < numTeams; i++){
+      if(File.Exists(i+".txt")){
+        int j = 1;
+        while(GetLine(i+".txt", j) != GetLine("blank.txt", 1)){
+          //Console.WriteLine(GetLine(team+".txt",i));
+          j++;
+          if(GetLine(i+".txt", j).Contains("Tele Upper") && i+".txt" != teleHighTeam1 + ".txt" && i+".txt" != teleHighTeam2 + ".txt"&& i+".txt" != teleHighTeam3 + ".txt"&& i+".txt" != teleHighTeam4 + ".txt"){
+            string num1 = GetLine(i+".txt", j)[12].ToString();
+            string num2 = GetLine(i+".txt", j)[13].ToString();
+            tempNum = Int32.Parse(num1+num2);
+            if(tempNum > teleHigh5){
+              teleHighTeam5 = i.ToString();
+              teleHigh5 = tempNum;
+            }
+          }
+        }
+      }
+    }
+
+    Console.WriteLine("1. Team " + teleHighTeam1 + " Upper Tele: " + teleHigh1);
+    Console.WriteLine("2. Team " + teleHighTeam2 + " Upper Tele: " + teleHigh2);
+    Console.WriteLine("3. Team " + teleHighTeam3 + " Upper Tele: " + teleHigh3);
+    Console.WriteLine("4. Team " + teleHighTeam4 + " Upper Tele: " + teleHigh4);
+    Console.WriteLine("5. Team " + teleHighTeam5 + " Upper Tele: " + teleHigh5);
+    Console.WriteLine("6. Team " + teleHighTeam6 + " Upper Tele: " + teleHigh6);
+    Console.WriteLine("7. Team " + teleHighTeam7 + " Upper Tele: " + teleHigh7);
+    Console.WriteLine("8. Team " + teleHighTeam8 + " Upper Tele: " + teleHigh8);
+    Console.WriteLine("9. Team " + teleHighTeam9 + " Upper Tele: " + teleHigh9);
+    Console.WriteLine("10. Team " + teleHighTeam10 + " Upper Tele: " + teleHigh10);
+    
+    Console.WriteLine();
+    Console.ForegroundColor = ConsoleColor.DarkCyan;
     Console.WriteLine("Press Enter to go back to menu");
     Console.ForegroundColor = ConsoleColor.White;
     Console.ReadLine();
