@@ -11,8 +11,11 @@ class BestTeam{
     Console.WriteLine("1. Top 10 Tele Upper Cargo Amount");
     Console.WriteLine("2. Top 10 Tele Lower Cargo Amount");
     Console.WriteLine("3. Top 10 Tele Overall Cargo Points");
-    Console.WriteLine("4. Top 10 Climb Type/Time");
-    Console.WriteLine("5. Top 10 Defense Bot");
+    Console.WriteLine("4. Top 10 Auto Upper Cargo Amount");
+    Console.WriteLine("5. Top 10 Auto Lower Cargo Amount");
+    Console.WriteLine("6. Top 10 Auto Overall Cargo Points");
+    Console.WriteLine("7. Top 10 Climb Type/Time");
+    Console.WriteLine("8. Top 10 Defense Bot");
     prompt = Console.ReadLine();
     if(prompt == "1"){
       Console.Clear();
@@ -24,9 +27,21 @@ class BestTeam{
     }
     else if(prompt == "3"){
       Console.Clear();
-      bestTeamsStats("Tele Cargo Score", 18, 19, 0, 0, false, "Cargo Points");
+      bestTeamsStats("Tele Cargo Score", 18, 19, 0, 0, false, "Cargo Points Tele");
     }
     else if(prompt == "4"){
+      Console.Clear();
+      bestTeamsStats("Auto Upper", 12, 13, 0, 0, false, "Upper Auto");
+    }
+    else if(prompt == "5"){
+      Console.Clear();
+      bestTeamsStats("Auto Lower", 12, 13, 0, 0, false, "Lower Auto");
+    }
+    else if(prompt == "6"){
+      Console.Clear();
+      bestTeamsStats("Auto Cargo Score", 18, 19, 0, 0, false, "Cargo Points Auto");
+    }
+    else if(prompt == "7"){
       Console.Clear();
       bestTeamsStats("Total Climb Time", 18, 19, 0, 10000, true, "Climb Time");
     }

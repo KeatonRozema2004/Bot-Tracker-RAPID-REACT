@@ -265,8 +265,13 @@ class MatchMake{
     else{
       writeToFile(team, "Tele Cargo Score: " + teleCargo);
     }
+    if((autoCargo).ToString().Length == 1){
+      writeToFile(team, "Auto Cargo Score: 0" + autoCargo);
+    }
+    else{
+      writeToFile(team, "Auto Cargo Score: " + autoCargo);
+    }
     
-    writeToFile(team, "Auto Cargo Score: " + autoCargo);
     writeToFile(team, "Auto Accuracy: " + autoAccuracy);
     writeToFile(team, "Tele Accuracy: " + teleAccuracy);
 

@@ -1,225 +1,225 @@
-Match Number: 5
+Match Number: 1
 Taxi: y
 Auto Upper: 03
-Auto Lower: 00
-Auto Missed: 01
-Tele Upper: 13
-Tele Lower: 01
-Tele Missed: 01
+Auto Lower: 05
+Auto Missed: 02
+Tele Upper: 23
+Tele Lower: 10
+Tele Missed: 02
 Position: t
-Defense: 1
-Climb Type: m
-Start: 15
-End: 5
-Entry: f
-Total Climb Time: 10
-Tele Cargo Score: 27
-Auto Cargo Score: 12
-------------------------
-Match Number: 6
-Taxi: y
-Auto Upper: 01
-Auto Lower: 01
-Auto Missed: 01
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: n
-Defense: 0
-Climb Type: l
-Start: 30
-End: 3
-Entry: f
-Total Climb Time: 27
-Tele Cargo Score: 03
-Auto Cargo Score: 6
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 01
-Auto Lower: 01
-Auto Missed: 01
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: n
-Defense: 0
-Climb Type: t
-Start: 30
-End: 2
-Entry: f
-Total Climb Time: 28
-Tele Cargo Score: 03
-Auto Cargo Score: 6
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 01
-Auto Lower: 07
-Auto Missed: 03
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: l
-Defense: 0
-Climb Type: 1
-Start: 1
-End: 1
-Entry: f
-Total Climb Time: 00
-Tele Cargo Score: 03
-Auto Cargo Score: 18
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 07
-Auto Lower: 07
-Auto Missed: 02
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: l
-Defense: 0
-Climb Type: l
-Start: 30
-End: 1
-Entry: f
-Total Climb Time: 29
-Tele Cargo Score: 03
-Auto Cargo Score: 42
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 01
-Auto Lower: 02
-Auto Missed: 03
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: n
-Defense: 0
-Climb Type: l
-Start: 30
-End: 2
-Entry: f
-Total Climb Time: 28
-Tele Cargo Score: 03
-Auto Cargo Score: 8
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 02
-Auto Lower: 04
-Auto Missed: 01
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: l
 Defense: 0
 Climb Type: m
-Start: 30
-End: 2
+Start: 50
+End: 6
 Entry: f
-Total Climb Time: 28
-Tele Cargo Score: 03
-Auto Cargo Score: 16
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 04
-Auto Lower: 03
-Auto Missed: 01
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: l
-Defense: 1
-Climb Type: m
-Start: 1
-End: 1
-Entry: f
-Total Climb Time: 00
-Tele Cargo Score: 03
+Total Climb Time: 44
+Tele Cargo Score: 56
 Auto Cargo Score: 22
+Auto Accuracy: 80%
+Tele Accuracy: 94.28571428571428%
 ------------------------
-Match Number: 4
-Taxi: y
-Auto Upper: 02
-Auto Lower: 03
-Auto Missed: 02
-Tele Upper: 01
-Tele Lower: 02
-Tele Missed: 03
-Position: l
-Defense: 0
-Climb Type: l
-Start: 30
-End: 2
-Entry: f
-Total Climb Time: 28
-Tele Cargo Score: 04
-Auto Cargo Score: 14
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 01
-Auto Lower: 02
-Auto Missed: 02
-Tele Upper: 03
-Tele Lower: 02
-Tele Missed: 01
-Position: l
-Defense: 0
-Climb Type: m
-Start: 30
-End: 2
-Entry: f
-Total Climb Time: 28
-Tele Cargo Score: 08
-Auto Cargo Score: 8
-Auto Accuracy: 60%
-Tele Accuracy: 83.33333333333334%
-------------------------
-Match Number: 10
-Taxi: y
-Auto Upper: 01
-Auto Lower: 02
-Auto Missed: 02
-Tele Upper: 10
-Tele Lower: 05
-Tele Missed: 04
-Position: l
-Defense: 0
-Climb Type: m
-Start: 9
-End: 7
-Entry: f
-Total Climb Time: 02
-Tele Cargo Score: 25
-Auto Cargo Score: 8
-Auto Accuracy: 60%
-Tele Accuracy: 78.94736842105263%
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 00
-Auto Lower: 00
-Auto Missed: 100
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: l
-Defense: 0
-Climb Type: m
-Start: 10
-End: 2
-Entry: f
-Total Climb Time: 08
-Tele Cargo Score: 03
-Auto Cargo Score: 0
-Auto Accuracy: 0%
-Tele Accuracy: 66.66666666666666%
-------------------------
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
 0
 0
 0
