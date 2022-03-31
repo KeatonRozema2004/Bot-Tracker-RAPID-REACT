@@ -13,6 +13,9 @@ class MatchMake{
     }
     Console.WriteLine("Added team!");
   }
+  ///<summary>
+  ///Makes match, is found in MatchMake folder
+  ///</summary
   public void makeMatch(){
     Menu menu = new Menu();
     string team;
