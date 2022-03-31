@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/runner/Bot-Tracker-RAPID-REACT/main.csproj",
+      "projectUniqueName": "/home/runner/Bot-Tracker-RAPID-REACT-1/main.csproj",
       "projectName": "main",
-      "projectPath": "/home/runner/Bot-Tracker-RAPID-REACT/main.csproj",
+      "projectPath": "/home/runner/Bot-Tracker-RAPID-REACT-1/main.csproj",
       "packagesPath": "/home/runner/.nuget/packages/",
-      "outputPath": "/home/runner/Bot-Tracker-RAPID-REACT/obj/",
+      "outputPath": "/home/runner/Bot-Tracker-RAPID-REACT-1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/runner/.nuget/NuGet/NuGet.Config"
