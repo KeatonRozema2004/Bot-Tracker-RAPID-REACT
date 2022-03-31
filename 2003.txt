@@ -1,23 +1,23 @@
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
+Match Number: 106
+Taxi: n
+Auto Upper: 02
+Auto Lower: 08
+Auto Missed: 500
+Tele Upper: 06
+Tele Lower: 06
+Tele Missed: 03
+Position: l
+Defense: 0
+Climb Type: m
+Start: 10
+End: 2
+Entry: f
+Total Climb Time: 08
+Tele Cargo Score: 18
+Auto Cargo Score: 24
+Auto Accuracy: 1.9607843137254901%
+Tele Accuracy: 80%
+------------------------
 0
 0
 0
