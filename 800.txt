@@ -1,23 +1,23 @@
-Match Number: 7
+Match Number: 10
 Taxi: y
 Auto Upper: 00
-Auto Lower: 02
-Auto Missed: 00
-Tele Upper: 02
-Tele Lower: 07
-Tele Missed: 03
-Position: n
+Auto Lower: 03
+Auto Missed: 01
+Tele Upper: 03
+Tele Lower: 01
+Tele Missed: 01
+Position: t
 Defense: 0
-Climb Type: h
+Climb Type: m
 Start: 20
-End: 5
-Total Climb Time: 15
-Tele Cargo Score: 11
-Auto Cargo Score: 4
+End: 2
+Entry: s
+Total Climb Time: 18
+Tele Cargo Score: 07
+Auto Cargo Score: 6
+Auto Accuracy: 75%
+Tele Accuracy: 80%
 ------------------------
-0
-0
-0
 0
 0
 0

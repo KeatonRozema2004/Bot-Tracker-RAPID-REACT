@@ -3,21 +3,17 @@ using System.IO;
 using System.Threading;
 
 class Program {
-  
 
   public static void menu(){
-    Console.Title = ("The Console");
-    Console.ForegroundColor = ConsoleColor.Blue;
+    Console.ForegroundColor = ConsoleColor.DarkCyan;
     Console.WriteLine();
     Console.WriteLine("---Bot Tracker: RAPID REACT---");
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("Choose an option:");
     Console.WriteLine("1. Enter Data/Create Team");
-    Console.WriteLine("2. Specific Team Best Scores");
-    Console.WriteLine("3. Specific Team Average Scores");
-    Console.WriteLine("4. All Team Matches");
-    Console.WriteLine("5. Driver Sheet");
-    Console.WriteLine("6. Overall Best Scores");
+    Console.WriteLine("2. Specific Team Average Scores");
+    Console.WriteLine("3. Driver Sheet");
+    Console.WriteLine("4. Overall Best Scores");
     Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.DarkGreen;
     Console.WriteLine("For ideas and concepts: https://docs.google.com/document/d/1lcDnq1DKAksiUKyjLZiNfk-rsdiIlfKHMmPCIlj3ZKc/edit#");
@@ -43,29 +39,16 @@ class Program {
       }
     }
     else if (prompt ==  "2"){
-      bestScore();
-      Console.WriteLine("Press Enter to go back to menu");
-      Console.ReadLine();
-      Console.Clear();
-      menu();
-    }
-    else if (prompt ==  "3"){
       averageCargo();
     }
-    else if (prompt ==  "4"){
-      lastMatches();
-      Console.WriteLine("Press enter to continue");
-      Console.ReadLine();
-      Console.Clear();
-      menu();
-    }
-    else if (prompt ==  "5"){
+    else if (prompt ==  "3"){
       driveData();
     }
-    else if (prompt == "6"){
+    else if (prompt == "4"){
       bestTeamMenu();
     }
     else{
+      Console.Clear();
       menu();
     }
     
@@ -98,6 +81,7 @@ class Program {
       bestTeamsStats("Total Climb Time", 18, 19, 0, 10000, true);
     }
     else{
+      Console.Clear();
       menu();
     }
     
@@ -142,7 +126,7 @@ class Program {
         Console.WriteLine("--------------------");
       }
     }
-    bestScore();
+    bestScore(team);
     Console.WriteLine("Press enter to go back to menu");
     Console.ReadLine();
     Console.Clear();
@@ -399,23 +383,20 @@ class Program {
   ///<summary>
   ///Looks at the best scores for a specified team
   ///</summary>
-  public static void bestScore(){
-    string team;
+  public static void bestScore(string team){
     int autoHigh = 0;
     int autoLow = 0;
     int teleHigh = 0;
     int teleLow = 0;
     int time = 500;
-    int leastAutoMissed = 500;
-    int leastTeleMissed = 500;
+    //int leastAutoMissed = 500;
+    //int leastTeleMissed = 500;
     int defense = 0;
     int tempNum = 0;
-    string tempString;
+    //string tempString;
     string climbType = "n";
     int i = 1; 
-    Console.Write("Team #: ");
-    team = Console.ReadLine();
-    Console.WriteLine("Getting team data...");
+    //Console.WriteLine("Getting team data...");
     while(GetLine(team+".txt", i) != GetLine("blank.txt", 1)){
       //Console.WriteLine(GetLine(team+".txt",i));
       i++;
@@ -536,7 +517,8 @@ class Program {
   public static int averageCargo(){
     //String stringy = new String();
     string team;
-    int averageScore = 0;
+    int averageScoreTele = 0;
+    int averageScoreAccTele = 0;
     int i = 1;
     int j = 0;
     Console.Write("Team #: ");
@@ -547,19 +529,32 @@ class Program {
       if(GetLine(team+".txt", i).Contains("Tele Cargo Score")){
         string num1 = GetLine(team+".txt", i)[18].ToString();
         string num2 = GetLine(team+".txt", i)[19].ToString();
-        averageScore += Int32.Parse(num1+num2);
+        averageScoreTele += Int32.Parse(num1+num2);
+        j++;
+      }
+    }
+    i=0;
+    j=0;
+    while(GetLine(team+".txt", i) != GetLine("blank.txt", 1)){
+      //Console.WriteLine(GetLine(team+".txt",i));
+      i++;
+      if(GetLine(team+".txt", i).Contains("Tele Accuracy")){
+        string num1 = GetLine(team+".txt", i)[15].ToString();
+        string num2 = GetLine(team+".txt", i)[16].ToString();
+        averageScoreAccTele += Int32.Parse(num1+num2);
         j++;
       }
     }
     
-    Console.WriteLine("Average Tele Cargo Score: " + averageScore/j);
+    Console.WriteLine("Average Tele Cargo Score: " + averageScoreTele/j);
+    Console.WriteLine("Average Accuracy Tele Cargo Score: " + averageScoreAccTele/j + "%");
     Console.WriteLine();
     
     Console.WriteLine("Please press Enter to go back to menu");
     Console.ReadLine();
     Console.Clear();
     menu();
-    return averageScore/j;
+    return 1;
   }
 
   
@@ -588,6 +583,9 @@ class Program {
     int climbTime;
     string climbType;
     string climbEnter;
+    
+    string autoAccuracy;
+    string teleAccuracy;
     
     string prompt;
     
@@ -675,6 +673,17 @@ class Program {
     climbEnter = Console.ReadLine();
 
     climbTime = (Int32.Parse(climbStart) - Int32.Parse(climbEnd));
+    
+    double autoUpperInt = Double.Parse(autoUpper);
+    double autoLowerInt = Double.Parse(autoLower);
+    double autoMissedInt = Double.Parse(autoMissed);
+    autoAccuracy = (autoUpperInt+autoLowerInt)/(autoUpperInt + autoLowerInt + autoMissedInt)*100 + "%";
+
+    double teleUpperInt = Double.Parse(teleUpper);
+    double teleLowerInt = Double.Parse(teleLower);
+    double teleMissedInt = Double.Parse(teleMissed);
+    teleAccuracy = (teleUpperInt+teleLowerInt)/(teleUpperInt + teleLowerInt + teleMissedInt)*100 + "%";
+    
 
     
     //User match data
@@ -711,6 +720,8 @@ class Program {
     }
     
     writeToFile(team, "Auto Cargo Score: " + autoCargo);
+    writeToFile(team, "Auto Accuracy: " + autoAccuracy);
+    writeToFile(team, "Tele Accuracy: " + teleAccuracy);
 
     
     writeToFile(team, "------------------------");
@@ -718,6 +729,7 @@ class Program {
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("***********************");
     Console.ForegroundColor = ConsoleColor.Green;
+    //Console.WriteLine(autoAccuracy);
     Console.WriteLine("Success!");
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("***********************");

@@ -1,23 +1,23 @@
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
+Match Number: 8
+Taxi: y
+Auto Upper: 03
+Auto Lower: 02
+Auto Missed: 01
+Tele Upper: 02
+Tele Lower: 15
+Tele Missed: 03
+Position: l
+Defense: 0
+Climb Type: m
+Start: 20
+End: 3
+Entry: f
+Total Climb Time: 17
+Tele Cargo Score: 19
+Auto Cargo Score: 16
+Auto Accuracy: 83.33333333333334%
+Tele Accuracy: 85%
+------------------------
 0
 0
 0
