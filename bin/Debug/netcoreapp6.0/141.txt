@@ -6,40 +6,184 @@ Auto Missed: 01
 Tele Upper: 01
 Tele Lower: 01
 Tele Missed: 01
-Position: n
-Defense: 1
-Climb Type: l
+Position: l
+Defense: 0
+Climb Type: m
 Start: 30
 End: 2
 Entry: f
 Total Climb Time: 28
 Tele Cargo Score: 03
 Auto Cargo Score: 06
-Auto Cargo Total: 0101
 Auto Accuracy: 66.66666666666666%
 Tele Accuracy: 66.66666666666666%
 ------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 01
-Auto Lower: 01
-Auto Missed: 01
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: n
-Defense: 1
-Climb Type: l
-Start: 30
-End: 8
-Entry: f
-Total Climb Time: 22
-Tele Cargo Score: 03
-Auto Cargo Score: 06
-Auto Cargo Total: 02
-Auto Accuracy: 66.66666666666666%
-Tele Accuracy: 66.66666666666666%
-------------------------
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
 0
 0
 0
