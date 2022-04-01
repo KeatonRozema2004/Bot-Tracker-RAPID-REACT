@@ -296,7 +296,7 @@ class MatchMake
             writeToFile(team, "Total Climb Time: " + climbTime);
         }
         writeToFile(team, "Climb Type: " + climbType);
-        writeToFile(team, "Defense: " + defense);
+        writeToFile(team, "Defense: " + "0" + defense);
         writeToFile(team, "Position: " + position);
         writeToFile(team, "Entry: " + climbEnter);
 

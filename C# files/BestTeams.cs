@@ -54,6 +54,11 @@ class BestTeam
             Console.Clear();
             bestTeamsStats("Total Climb Time", 18, 19, 0, 10000, true, "Climb Time");
         }
+        else if (prompt == "8")
+        {
+            Console.Clear();
+            bestTeamsStats("Defense", 9, 10, 0, 0, false, "Defense");
+        }
         else
         {
             Console.Clear();
