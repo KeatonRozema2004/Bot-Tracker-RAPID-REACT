@@ -1,87 +1,231 @@
-Match Number: 1
+Match Number: 2
 Taxi: y
-Auto Upper: 01
-Auto Lower: 01
+Auto Upper: 02
+Auto Lower: 10
 Auto Missed: 01
 Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
+Tele Lower: 20
+Tele Missed: 03
 Position: n
-Defense: 1
-Climb Type: l
+Defense: 0
+Climb Type: m
+Start: 34
+End: 2
+Entry: f
+Total Climb Time: 32
+Tele Cargo Score: 22
+Auto Cargo Score: 28
+Auto Cargo Total: 12
+Auto Accuracy: 92.3076923076923%
+Tele Accuracy: 87.5%
+------------------------
+Match Number: 2
+Taxi: y
+Auto Upper: 10
+Auto Lower: 10
+Auto Missed: 01
+Tele Upper: 23
+Tele Lower: 23
+Tele Missed: 01
+Position: l
+Defense: 0
+Climb Type: m
 Start: 30
 End: 2
 Entry: f
 Total Climb Time: 28
-Tele Cargo Score: 03
-Auto Cargo Score: 06
-Auto Cargo Total: 0101
-Auto Accuracy: 66.66666666666666%
-Tele Accuracy: 66.66666666666666%
+Tele Cargo Score: 69
+Auto Cargo Score: 60
+Auto Cargo Total: 20
+Auto Accuracy: 95.23809523809523%
+Tele Accuracy: 97.87234042553192%
 ------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 01
-Auto Lower: 01
-Auto Missed: 01
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: n
-Defense: 1
-Climb Type: l
-Start: 30
-End: 8
-Entry: f
-Total Climb Time: 22
-Tele Cargo Score: 03
-Auto Cargo Score: 06
-Auto Cargo Total: 02
-Auto Accuracy: 66.66666666666666%
-Tele Accuracy: 66.66666666666666%
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 01
-Auto Lower: 01
-Auto Missed: 05
-Tele Upper: 02
-Tele Lower: 10
-Tele Missed: 10
-Position: n
-Defense: 0
-Climb Type: l
-Start: 10
-End: 2
-Entry: f
-Total Climb Time: 08
-Tele Cargo Score: 14
-Auto Cargo Score: 06
-Auto Cargo Total: 02
-Auto Accuracy: 28.57142857142857%
-Tele Accuracy: 54.54545454545454%
-------------------------
-Match Number: 1
-Taxi: y
-Auto Upper: 01
-Auto Lower: 01
-Auto Missed: 01
-Tele Upper: 01
-Tele Lower: 01
-Tele Missed: 01
-Position: n
-Defense: 0
-Climb Type: t
-Start: 30
-End: 2
-Entry: f
-Total Climb Time: 28
-Tele Cargo Score: 03
-Auto Cargo Score: 06
-Auto Cargo Total: 02
-Auto Accuracy: 66.66666666666666%
-Tele Accuracy: 66.66666666666666%
-------------------------
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
 0
 0
 0
