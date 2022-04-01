@@ -535,6 +535,296 @@ class BestTeam
                 }
             }
         }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh11 && hang == false)
+                        {
+                            teleHighTeam11 = i.ToString();
+                            teleHigh11 = tempNum;
+                        }
+                        else if (tempNum < teleHigh11 && hang)
+                        {
+                            teleHighTeam11 = i.ToString();
+                            teleHigh11 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt" && i + ".txt" != teleHighTeam11 + ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh12 && hang == false)
+                        {
+                            teleHighTeam12 = i.ToString();
+                            teleHigh12 = tempNum;
+                        }
+                        else if (tempNum < teleHigh12 && hang)
+                        {
+                            teleHighTeam12 = i.ToString();
+                            teleHigh12 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt" && i + ".txt" != teleHighTeam11 + ".txt" && i + ".txt" != teleHighTeam12+ ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh13 && hang == false)
+                        {
+                            teleHighTeam13 = i.ToString();
+                            teleHigh13 = tempNum;
+                        }
+                        else if (tempNum < teleHigh13 && hang)
+                        {
+                            teleHighTeam13 = i.ToString();
+                            teleHigh13 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt" && i + ".txt" != teleHighTeam11 + ".txt" && i + ".txt" != teleHighTeam12 + ".txt" && i + ".txt" != teleHighTeam13 + ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh14 && hang == false)
+                        {
+                            teleHighTeam14 = i.ToString();
+                            teleHigh14 = tempNum;
+                        }
+                        else if (tempNum < teleHigh14 && hang)
+                        {
+                            teleHighTeam14 = i.ToString();
+                            teleHigh14 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt" && i + ".txt" != teleHighTeam11 + ".txt" && i + ".txt" != teleHighTeam12 + ".txt" && i + ".txt" != teleHighTeam13 + ".txt" && i + ".txt" != teleHighTeam14 + ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh15 && hang == false)
+                        {
+                            teleHighTeam15 = i.ToString();
+                            teleHigh15 = tempNum;
+                        }
+                        else if (tempNum < teleHigh15 && hang)
+                        {
+                            teleHighTeam15 = i.ToString();
+                            teleHigh15 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt" && i + ".txt" != teleHighTeam11 + ".txt" && i + ".txt" != teleHighTeam12 + ".txt" && i + ".txt" != teleHighTeam13 + ".txt" && i + ".txt" != teleHighTeam14 + ".txt" && i + ".txt" != teleHighTeam15 + ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh16 && hang == false)
+                        {
+                            teleHighTeam16 = i.ToString();
+                            teleHigh16 = tempNum;
+                        }
+                        else if (tempNum < teleHigh16 && hang)
+                        {
+                            teleHighTeam16 = i.ToString();
+                            teleHigh16 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt" && i + ".txt" != teleHighTeam11 + ".txt" && i + ".txt" != teleHighTeam12 + ".txt" && i + ".txt" != teleHighTeam13 + ".txt" && i + ".txt" != teleHighTeam14 + ".txt" && i + ".txt" != teleHighTeam15 + ".txt" && i + ".txt" != teleHighTeam16 + ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh17 && hang == false)
+                        {
+                            teleHighTeam17 = i.ToString();
+                            teleHigh17 = tempNum;
+                        }
+                        else if (tempNum < teleHigh17 && hang)
+                        {
+                            teleHighTeam17 = i.ToString();
+                            teleHigh17 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt" && i + ".txt" != teleHighTeam11 + ".txt" && i + ".txt" != teleHighTeam12 + ".txt" && i + ".txt" != teleHighTeam13 + ".txt" && i + ".txt" != teleHighTeam14 + ".txt" && i + ".txt" != teleHighTeam15 + ".txt" && i + ".txt" != teleHighTeam16 + ".txt" && i + ".txt" != teleHighTeam17 + ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh18 && hang == false)
+                        {
+                            teleHighTeam18 = i.ToString();
+                            teleHigh18 = tempNum;
+                        }
+                        else if (tempNum < teleHigh18 && hang)
+                        {
+                            teleHighTeam18 = i.ToString();
+                            teleHigh18 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt" && i + ".txt" != teleHighTeam11 + ".txt" && i + ".txt" != teleHighTeam12 + ".txt" && i + ".txt" != teleHighTeam13 + ".txt" && i + ".txt" != teleHighTeam14 + ".txt" && i + ".txt" != teleHighTeam15 + ".txt" && i + ".txt" != teleHighTeam16 + ".txt" && i + ".txt" != teleHighTeam17 + ".txt" && i + ".txt" != teleHighTeam18 + ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh19 && hang == false)
+                        {
+                            teleHighTeam19 = i.ToString();
+                            teleHigh19 = tempNum;
+                        }
+                        else if (tempNum < teleHigh19 && hang)
+                        {
+                            teleHighTeam19 = i.ToString();
+                            teleHigh19 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
+        tempNum = tempNumb;
+        for (int i = 0; i < numTeams; i++)
+        {
+            if (File.Exists(i + ".txt"))
+            {
+                int j = 1;
+                while (match.GetLine(i + ".txt", j) != match.GetLine("blank.txt", 1))
+                {
+                    //Console.WriteLine(match.GetLine(team+".txt",i));
+                    j++;
+                    if (match.GetLine(i + ".txt", j).Contains(contains) && i + ".txt" != teleHighTeam1 + ".txt" && i + ".txt" != teleHighTeam2 + ".txt" && i + ".txt" != teleHighTeam3 + ".txt" && i + ".txt" != teleHighTeam4 + ".txt" && i + ".txt" != teleHighTeam5 + ".txt" && i + ".txt" != teleHighTeam6 + ".txt" && i + ".txt" != teleHighTeam7 + ".txt" && i + ".txt" != teleHighTeam8 + ".txt" && i + ".txt" != teleHighTeam9 + ".txt" && i + ".txt" != teleHighTeam10 + ".txt" && i + ".txt" != teleHighTeam11 + ".txt" && i + ".txt" != teleHighTeam12 + ".txt" && i + ".txt" != teleHighTeam13 + ".txt" && i + ".txt" != teleHighTeam14 + ".txt" && i + ".txt" != teleHighTeam15 + ".txt" && i + ".txt" != teleHighTeam16 + ".txt" && i + ".txt" != teleHighTeam17 + ".txt" && i + ".txt" != teleHighTeam18 + ".txt" && i + ".txt" != teleHighTeam19 + ".txt")
+                    {
+                        string num1 = match.GetLine(i + ".txt", j)[numb1].ToString();
+                        string num2 = match.GetLine(i + ".txt", j)[numb2].ToString();
+                        tempNum = Int32.Parse(num1 + num2);
+                        if (tempNum > teleHigh20 && hang == false)
+                        {
+                            teleHighTeam20 = i.ToString();
+                            teleHigh20 = tempNum;
+                        }
+                        else if (tempNum < teleHigh20 && hang)
+                        {
+                            teleHighTeam20 = i.ToString();
+                            teleHigh20 = tempNum;
+                        }
+                    }
+                }
+            }
+        }
 
         Console.WriteLine("1. Team " + teleHighTeam1 + " " + name + ": " + teleHigh1);
         Console.WriteLine("2. Team " + teleHighTeam2 + " " + name + ": " + teleHigh2);
