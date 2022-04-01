@@ -10,14 +10,14 @@ class BestTeam
         string prompt;
         Console.WriteLine("Best Team Menu");
         Console.WriteLine("---------------------");
-        Console.WriteLine("1. Top 10 Tele Upper Cargo Amount");
-        Console.WriteLine("2. Top 10 Tele Lower Cargo Amount");
-        Console.WriteLine("3. Top 10 Tele Overall Cargo Points");
-        Console.WriteLine("4. Top 10 Auto Upper Cargo Amount");
-        Console.WriteLine("5. Top 10 Auto Lower Cargo Amount");
-        Console.WriteLine("6. Top 10 Auto Overall Cargo Points");
-        Console.WriteLine("7. Top 10 Climb Type/Time");
-        Console.WriteLine("8. Top 10 Defense Bot");
+        Console.WriteLine("1. Tele Upper Cargo Amount");
+        Console.WriteLine("2. Tele Lower Cargo Amount");
+        Console.WriteLine("3. Tele Overall Cargo Points");
+        Console.WriteLine("4. Auto Upper Cargo Amount");
+        Console.WriteLine("5. Auto Lower Cargo Amount");
+        Console.WriteLine("6. Auto Overall Cargo Points");
+        Console.WriteLine("7. Climb Type/Time");
+        Console.WriteLine("8. Defense Bot");
         prompt = Console.ReadLine();
         if (prompt == "1")
         {
