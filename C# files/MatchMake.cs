@@ -266,23 +266,27 @@ class MatchMake
         //User match data
         writeToFile(team, "Match Number: " + match);
         writeToFile(team, "Taxi: " + taxi);
+        writeToFile(team, "Tele Lower: " + teleLower);
+        writeToFile(team, "Tele Upper: " + teleUpper);
+        int totalAuto = Int32.Parse(autoUpper) + Int32.Parse(autoLower);
+
+        if ((totalAuto).ToString().Length == 1)
+        {
+            writeToFile(team, "Auto Cargo Total: 0" + totalAuto);
+        }
+        else
+        {
+            writeToFile(team, "Auto Cargo Total: " + totalAuto);
+        }
         writeToFile(team, "Auto Upper: " + autoUpper);
         writeToFile(team, "Auto Lower: " + autoLower);
         writeToFile(team, "Auto Missed: " + autoMissed);
-        writeToFile(team, "Tele Upper: " + teleUpper);
-        writeToFile(team, "Tele Lower: " + teleLower);
+        
         writeToFile(team, "Tele Missed: " + teleMissed);
-        writeToFile(team, "Position: " + position);
-        writeToFile(team, "Defense: " + defense);
-        writeToFile(team, "Climb Type: " + climbType);
+        
+        
         writeToFile(team, "Start: " + climbStart);
         writeToFile(team, "End: " + climbEnd);
-        writeToFile(team, "Entry: " + climbEnter);
-
-        teleCargo = (Int32.Parse(teleUpper) * 2) + (Int32.Parse(teleLower) * 1);
-        autoCargo = (Int32.Parse(autoUpper) * 4) + (Int32.Parse(autoLower) * 2);
-        //Calculated match data
-
         if ((climbTime).ToString().Length == 1)
         {
             writeToFile(team, "Total Climb Time: 0" + climbTime);
@@ -291,6 +295,16 @@ class MatchMake
         {
             writeToFile(team, "Total Climb Time: " + climbTime);
         }
+        writeToFile(team, "Climb Type: " + climbType);
+        writeToFile(team, "Defense: " + defense);
+        writeToFile(team, "Position: " + position);
+        writeToFile(team, "Entry: " + climbEnter);
+
+        teleCargo = (Int32.Parse(teleUpper) * 2) + (Int32.Parse(teleLower) * 1);
+        autoCargo = (Int32.Parse(autoUpper) * 4) + (Int32.Parse(autoLower) * 2);
+        //Calculated match data
+
+        
         if ((teleCargo).ToString().Length == 1)
         {
             writeToFile(team, "Tele Cargo Score: 0" + teleCargo);
@@ -307,16 +321,7 @@ class MatchMake
         {
             writeToFile(team, "Auto Cargo Score: " + autoCargo);
         }
-        int totalAuto = Int32.Parse(autoUpper) + Int32.Parse(autoLower);
-
-        if ((totalAuto).ToString().Length == 1)
-        {
-            writeToFile(team, "Auto Cargo Total: 0" + totalAuto);
-        }
-        else
-        {
-            writeToFile(team, "Auto Cargo Total: " + totalAuto);
-        }
+        
 
         writeToFile(team, "Auto Accuracy: " + autoAccuracy);
         writeToFile(team, "Tele Accuracy: " + teleAccuracy);

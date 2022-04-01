@@ -176,7 +176,7 @@ class BestTeam
                 string num2 = match.GetLine(team + ".txt", i)[19].ToString();
                 tempNum = Int32.Parse(num1 + num2);
 
-                if (tempNum < time && match.GetLine(team + ".txt", i - 4)[12].ToString() == climbType)
+                if (tempNum < time && match.GetLine(team + ".txt", i + 1)[12].ToString() == climbType)
                 {
                     time = tempNum;
 
@@ -184,14 +184,23 @@ class BestTeam
             }
 
         }
-
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("-Best Scores-");
+        Console.ForegroundColor = ConsoleColor.DarkCyan;
         Console.WriteLine("Best Low Goal Tele: " + teleLow);
+        Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("Best High Goal Tele: " + teleHigh);
         Console.WriteLine();
+
+        Console.ForegroundColor = ConsoleColor.DarkCyan;
         Console.WriteLine("Best Auto Cargo Scored: " + autoTotal);
         Console.WriteLine();
+
+        Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("Best Climb Time: " + time);
+        Console.ForegroundColor = ConsoleColor.DarkCyan;
         Console.WriteLine("Best Climb Type: " + climbType);
+        Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("Best Defense: " + defense);
         Console.WriteLine();
 
