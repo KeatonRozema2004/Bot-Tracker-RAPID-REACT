@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/runner/Bot-Tracker-RAPID-REACT-1/main.csproj": {}
+    "/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/main.csproj": {}
   },
   "projects": {
-    "/home/runner/Bot-Tracker-RAPID-REACT-1/main.csproj": {
+    "/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/runner/Bot-Tracker-RAPID-REACT-1/main.csproj",
+        "projectUniqueName": "/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/main.csproj",
         "projectName": "main",
-        "projectPath": "/home/runner/Bot-Tracker-RAPID-REACT-1/main.csproj",
-        "packagesPath": "/home/runner/.nuget/packages/",
-        "outputPath": "/home/runner/Bot-Tracker-RAPID-REACT-1/obj/",
+        "projectPath": "/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/main.csproj",
+        "packagesPath": "/Users/keatonrozema/.nuget/packages/",
+        "outputPath": "/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/runner/.nuget/NuGet/NuGet.Config"
+          "/Users/keatonrozema/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/nix/store/jsm5am5i2b2izvwzbw5h6lk3plvpkrlw-dotnet-sdk-6.0.100/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }

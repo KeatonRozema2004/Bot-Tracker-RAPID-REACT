@@ -17,6 +17,7 @@ class MatchMake{
   ///Makes match, is found in MatchMake folder
   ///</summary
   public void makeMatch(){
+    string current = Directory.GetCurrentDirectory() + "\\";
     Menu menu = new Menu();
     string team;
     string match;
@@ -294,6 +295,7 @@ class MatchMake{
   }
   public string GetLine(string fileName, int line)
   {
+    string current = Directory.GetCurrentDirectory() + "//";
     using (var sr = new StreamReader(fileName)) {
     for (int i = 1; i < line; i++)
     sr.ReadLine();
@@ -303,6 +305,7 @@ class MatchMake{
   
   public void WriteLine(string fileName, int line)
   {
+    string current = Directory.GetCurrentDirectory() + "\\";
     using (var sr = new StreamWriter(fileName)) {
     for (int i = 1; i < line; i++)
     sr.WriteLine();
@@ -317,16 +320,17 @@ class MatchMake{
     
   }
   public void writeToFile(string team, string text){
+    string current = Directory.GetCurrentDirectory()+"/";
     int i = 1;
     bool emptyLine = false;
     while(emptyLine == false){
       //Thread.Sleep(10);
-      if(GetLine(team+".txt", i) != GetLine("blank.txt", 1)){
+      if(GetLine(current+team+".txt", i) != GetLine(current + "blank.txt", 1)){
         //Console.WriteLine(GetLine(team+".txt", i));
       }
       else{
         //Console.WriteLine("Wrote to line "+ i);
-        lineChanger(text , team+".txt" , i);
+        lineChanger(text , current + team +".txt" , i);
         emptyLine = true;
       }
       i++;

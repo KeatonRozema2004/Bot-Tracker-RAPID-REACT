@@ -33,7 +33,7 @@ class Menu{
       catch(Exception e){
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.DarkRed;
-        Console.WriteLine("Oops, something went wrong, check the code and please try again.");
+        Console.WriteLine("Oops, something went wrong, check the code and please try again."+e);
         Console.WriteLine();
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Please press enter to go to menu");

@@ -58,3 +58,17 @@
 /home/runner/Bot-Tracker-RAPID-REACT-1/obj/Debug/netcoreapp6.0/ref/main.dll
 /home/runner/Bot-Tracker-RAPID-REACT-1/obj/Debug/netcoreapp6.0/main.pdb
 /home/runner/Bot-Tracker-RAPID-REACT-1/obj/Debug/netcoreapp6.0/main.genruntimeconfig.cache
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/Debug/netcoreapp6.0/main.csproj.AssemblyReference.cache
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/Debug/netcoreapp6.0/main.GeneratedMSBuildEditorConfig.editorconfig
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/Debug/netcoreapp6.0/main.AssemblyInfoInputs.cache
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/Debug/netcoreapp6.0/main.AssemblyInfo.cs
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/Debug/netcoreapp6.0/main.csproj.CoreCompileInputs.cache
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/Debug/netcoreapp6.0/main.dll
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/Debug/netcoreapp6.0/ref/main.dll
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/Debug/netcoreapp6.0/main.pdb
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/bin/Debug/netcoreapp6.0/main.deps.json
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/bin/Debug/netcoreapp6.0/main.runtimeconfig.json
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/bin/Debug/netcoreapp6.0/main.dll
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/bin/Debug/netcoreapp6.0/ref/main.dll
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/bin/Debug/netcoreapp6.0/main.pdb
+/Users/keatonrozema/Documents/GitHub/Bot-Tracker-RAPID-REACT/obj/Debug/netcoreapp6.0/main.genruntimeconfig.cache
